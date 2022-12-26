@@ -68,7 +68,7 @@ const Pokedex = () => {
 
   const submit = (data) => {
     if (data.input) {
-      setNamePokemon(`https://pokeapi.co/api/v2/pokemon/${data.input}/`);
+      setNamePokemon(`https://pokeapi.co/api/v2/pokemon/${data.input.toLowerCase()}/`);
     } else {
       setNamePokemon(null);
     }
