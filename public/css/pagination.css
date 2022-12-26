@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.page{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.page>div>label{
+    font-family: 'Poppins', sans-serif;  
+    margin-right: 5px;
+    color: #7c7c7c;
+}
+.page>div>label>span{
+    color: black;
+}
+.page>div>select{
+    font-family: 'Poppins', sans-serif;    
+    width: 60px;
+    height: 100%;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(197, 197, 197, 0.534); 
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.page__ul{
+    list-style: none;
+    display: flex;
+    gap: 0.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.page__ul>.li-block{    
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid rgb(219, 219, 219);
+    padding: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;  
+    box-shadow: 0px 0px 5px 1px rgba(197, 197, 197, 0.534);  
+}
+.page__ul>li:hover{
+    background-color: red;
+    color: white;
+    border: 2px solid rgb(216, 0, 0);
+}
+.page__ul>li:active{
+    background-color: rgb(173, 0, 0);
+    color: white;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.li-block-2{
+    background-color: #eeeeee;
+}
+.li-active{
+    background-color: #ff0000;
+    color: white;
+}

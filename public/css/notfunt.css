@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.img-notfunt{
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url('../images/notfunt.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-notfunt>h1{
+    font-size: 4rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.514);
+    color: rgb(255, 0, 0);    
+    text-shadow: 0px 0px 3px rgba(46, 46, 46, 0.5);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
