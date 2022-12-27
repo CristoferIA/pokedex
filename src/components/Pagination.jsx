@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../public/css/pagination.css";
 
-const Pagination = ({ pokemon, setInitiaPoke, setFinaPoke }) => {
+const Pagination = ({ pokemon, setInitiaPoke, setFinaPoke, typeSelect }) => {
     const agruparBtn = 5
   const allPokemons = pokemon && Math.ceil(pokemon.length);
   const [maxResult, setMaxResult] = useState(5); // 5, 10, 20, 50
@@ -56,7 +56,10 @@ const Pagination = ({ pokemon, setInitiaPoke, setFinaPoke }) => {
         setShowBtn(arrBtn);
       }
     });
-  }, [pivot, arr]);
+  }, [pivot, arr, ]);
+
+  useEffect(()=>{handleStart();},[typeSelect])
+
 
   const handleSetPivot = (data) => {
     setPivot(data);

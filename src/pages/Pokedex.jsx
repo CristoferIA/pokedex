@@ -16,6 +16,9 @@ const Pokedex = () => {
   const [namePokemon, setNamePokemon] = useState();
   let poke_res = null;
 
+  const [initiaPoke, setInitiaPoke] = useState()
+  const [finaPoke, setFinaPoke] = useState()
+
   useEffect(() => {
     if(!namePokemon){
       if (typeSelect !== "All pokemon") {
@@ -73,8 +76,7 @@ const Pokedex = () => {
       setNamePokemon(null);
     }
   };
-  const [initiaPoke, setInitiaPoke] = useState()
-  const [finaPoke, setFinaPoke] = useState()
+
 
   if (namePokemon) {
     poke_res = (
@@ -92,6 +94,7 @@ const Pokedex = () => {
       </>
     );
   }
+
   return (
     <div className="pokedex">
       <HeaderPoke />
@@ -121,7 +124,7 @@ const Pokedex = () => {
           </form>
         </header>
         <section className="pokedex__pagination">
-          <Pagination pokemon={pokemon} setInitiaPoke={setInitiaPoke} setFinaPoke={setFinaPoke}/>
+          <Pagination pokemon={pokemon} setInitiaPoke={setInitiaPoke} setFinaPoke={setFinaPoke} typeSelect={typeSelect}/>
         </section>
         <section className="pokedex__section">
          {poke_res}
