@@ -61,6 +61,7 @@ const Pagination = ({ pokemon, setInitiaPoke, setFinaPoke, typeSelect }) => {
   useEffect(()=>{handleStart();},[typeSelect])
 
 
+
   const handleSetPivot = (data) => {
     setPivot(data);
   };
